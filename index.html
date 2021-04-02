@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>阿翔的自留地</title>
+    <meta name="keywords" content="博客,个人网站,GeeYo,ThinkPHP,bootstrap">
+    <meta name="description" content="这里是琚翔的个人网站，记录并分享着他想记录与分享的一切，可是他有点懒，更新的并不是那么频繁！">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="style/images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="360-site-verification" content="9080cebca28f53d9fb200a9ef6d9c873" />
+    <!-- Js -->
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <script src="style/js/jquery.min.js"></script>
+    <script src="style/js/tether.min.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <link href="style/css/style.css" type="text/css" rel="stylesheet" />
+    <script>
+        (function(window) {
+            var theUA = window.navigator.userAgent.toLowerCase();
+            if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+                var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+                if (ieVersion < 10) {
+                    var str = "你的浏览器版本太low了\n已经和时代脱轨了 :(";
+                    var str2 = "推荐使用:<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:red'>谷歌</a>," + "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:red'>火狐</a>," + "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%8C%8E%E8%B1%B9%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:red'>猎豹</a>,其他双核急速模式";
+                    document.writeln("<pre style='text-align:center;color:#fff;background-color:#0cc; height:100%;border:0;position:fixed;top:0;left:0;width:100%;z-index:1234'>" +
+                        "<h2 style='padding-top:200px;margin:0'><strong>" + str + "<br/></strong></h2><p>" +
+                        str2 + "</p><h2 style='margin:0'><strong>如果你的使用的是双核浏览器,请切换到极速模式访问<br/></strong></h2></pre>");
+                    document.execCommand("Stop");
+                };
+            }
+        })(window);
+    </script>
+	<style>
+        #cover{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display:none;
+            z-index:1000;
+			
+        }
+    </style>
+	    <style>
+    .black_overlay{
+      display: none;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index:1001;
+      -moz-opacity: 0.8;
+      opacity:.80;
+      filter: alpha(opacity=88);
+    }
+    .white_content {
+      display: none;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 55%;
+      height: 55%;
+      padding: 20px;
+      border: 10px solid orange;
+      background-color: white;
+      z-index:1002;
+      overflow: auto;
+    }.container {
+  height: 400px;
+  position: relative;
+}
+
+.container .content {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+  </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="nav">
+        <a class="logo" href="index.html"><img src="style/images/logo.png" width="40" title="阿翔的自留地"></a>
+    </div>
+    <!-- Body -->
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">
+            <li class="selected">
+				<div class="cd-half-width cd-img-container">
+                    <img src="style/images/tech-1.png" alt="倚白马笑书西风剑神" title="琚翔" />
+                </div>
+                <div class="cd-half-width">
+                    <h1 style="color:white;">倚白马笑书西风剑神</h1>
+                    <p>爱音乐、爱折腾、爱生活</p>
+                    <p>菜鸡代码编辑者，'会修电脑'的好人</p>
+                    <a class="cd-btn" href="about.html">查看详情</a>
+                </div>
+                
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h1 style="color:white;">Github地址</h1>
+                    <p>记录板砖点滴，分享bug喜乐！</p>
+					<a style="color:white;" class="logo pull-right sobtn"><span  style="cursor:pointer">个人资料</span></a>
+					<!--<a style="color:white;" herf="friends.html" target="_blank" title="请在其他各个平台（如花粉俱乐部，酷安等搞机平台）搜索主页ID">其他个人地址</a>
+					<p><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">其他个人地址</a></p>
+    <div id="light" class="white_content">
+		<p></p>
+		请在其他各个平台（如花粉俱乐部，酷安等搞机平台，蒸汽平台等）搜索主页ID“倚白马笑书西风剑神”，本人各平台昵称和头像均固定，只有头像和ID都符合才是在下哦！
+		<p></p>
+		另外本人不玩抖音快手等以极短视频为主的平台，非特殊情况不接各种单子，但欢迎各平台志同道合的朋友来一起探讨技术问题，关于本人资料请详见“简介”中的“查看详情”。
+		<p></p>
+		<a class="site" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></div>
+    <div id="fade" class="black_overlay"></div>-->
+					<p></p>
+                    <a class="cd-btn" href="https://github.com/juquxiang" target="_blank">查看详情</a>
+                </div>
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h1 style="color:white;">哔哩哔哩-bilibili-乾杯</h1>
+                    <p>我们都一样热爱生活，记录生活，享受生活！</p>
+                    <p>给我点个关注鸭</p>
+                    <a class="cd-btn" href="https://space.bilibili.com/440507752" target="_blank">查看详情</a>
+                </div>
+            </li>
+            <li class="cd-bg-video">
+                <div class="cd-full-width">
+                    <h1 style="color:white;">在线视频解析</h1>
+                    <p>观看生活影片，感受欢天喜地！</p>
+					<p>帮您观看各平台VIP视频</p>
+                    <a class="cd-btn" href="vip-video-player-master/index.html">查看详情</a>
+                </div>
+                <div class="cd-bg-video-wrapper" data-video="Tpl/Individual/Style/index/video/video">
+                </div>
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h1 style="color:white;">我想说走就走</h1>
+                    <p>生活不止眼前的苟且，还有诗和远方的田野！</p>
+                    <a class="cd-btn" href="tracks.html">查看详情</a>
+                </div>
+            </li>
+        </ul>
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                <ul>
+                    <li class="selected">
+                        <a class="glyphicon glyphicon-user" href="#0">简介</a>
+                    </li>
+                    <li>
+                        <a class="glyphicon glyphicon-fire" href="#0">博客</a>
+                    </li>
+                    <li>
+                        <a class="glyphicon glyphicon-film" href="#0">B站</a>
+                    </li>
+                    <li>
+                        <a class="glyphicon glyphicon-record" href="#0">解析</a>
+                    </li>
+                    <li>
+                        <a class="glyphicon glyphicon-globe" href="#0">旅行</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <script src="style/js/main.js"></script>
+    <!-- Footer -->
+    <div class="clear"></div>
+    <div class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#"> </a>
+                    <!--可以写文字 -->
+                </div>
+                <div class="col-sm-8 fr">
+                    <a href="#">仅为个人网站</a>
+                    <!--可以写文字 -->
+                </div>
+                <p> </p>
+            </div>
+        </div>
+        <!-- 弹出层 -->
+        <div class="so clur">
+        <i class="iconfont clur" title="关闭">×</i>
+			<div class="clur" style="position:relative;top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    			<div class="clur" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" >
+
+				<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请在其他各个平台（如花粉俱乐部，酷安等搞机平台，蒸汽平台等）搜索主页ID“倚白马笑书西风剑神”，本人各平台昵称和头像均固定，只有头像和ID都符合才是在下哦！<p> </p> <p></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;另外本人不玩抖音快手等以极短视频为主的平台，非特殊情况不接各种单子，但欢迎各平台志同道合的朋友来一起探讨技术问题，关于本人资料请详见“简介”中的“查看详情”</h2>
+   </div>
+</div>
+		</div>
+    <div class="to-top">↑</div>
+    <script src="style/js/GeeYo.js"></script>
+    <script>
+        var bheigh = $(window).height();
+        var bheigh = bheigh - 115;
+        $(".cd-hero").css('height', bheigh);
+        $(window).resize(function() {
+            var bheigh = $(window).height();
+            var bheigh = bheigh - 115;
+            $(".cd-hero").css('height', bheigh);
+        });
+    </script>
+    <script charset="gbk" src="https://www.baidu.com/js/opensug.js"></script>
+	</div>
+</body>
+
+</html>
